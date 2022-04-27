@@ -9,127 +9,135 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <aside id="sidebar__container">
+    <aside id="wrapper_left">
         <div id="logo__container" class="option__container">
-            <img id="logo__img" src="images/icons/logo.png"><p id="logo__text">Dashboard</p>
+            <img id="logo__img" class="option__img" src="images/icons/logo.png"><p id="logo__text">Dashboard</p>
         </div>
 
-        <div class="option__container">
-            <img class="option__img" src="images/icons/home.png"><p class="option__text">Home</p>
+        <div class="sidebar__sect">
+            <div class="option__container">
+                <img class="option__img" src="images/icons/home.png"><p class="option__text">Home</p>
+            </div>
+            <div class="option__container">
+                <img class="option__img" src="images/icons/profile.png"><p class="option__text">Profile</p>
+            </div>
+            <div class="option__container">
+                <img class="option__img" src="images/icons/message.png"><p class="option__text">Messages</p>
+            </div>
+            <div class="option__container">
+                <img class="option__img" src="images/icons/history.png"><p class="option__text">History</p>
+            </div>
+            <div class="option__container">
+                <img class="option__img" src="images/icons/tasks.png"><p class="option__text">Tasks</p>
+            </div>
+            <div class="option__container">
+                <img class="option__img" src="images/icons/communities.png"><p class="option__text">Communities</p>
+            </div>
         </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/profile.png"><p class="option__text">Profile</p>
-        </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/message.png"><p class="option__text">Messages</p>
-        </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/history.png"><p class="option__text">History</p>
-        </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/tasks.png"><p class="option__text">Tasks</p>
-        </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/communities.png"><p class="option__text">Communities</p>
-        </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/settings.png"><p class="option__text">Settings</p>
-        </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/support.png"><p class="option__text">Support</p>
-        </div>
-        <div class="option__container">
-            <img class="option__img" src="images/icons/privacy.png"><p class="option__text">Privacy</p>
+
+        <div class="sidebar__sect">
+            <div class="option__container">
+                <img class="option__img" src="images/icons/settings.png"><p class="option__text">Settings</p>
+            </div>
+            <div class="option__container">
+                <img class="option__img" src="images/icons/support.png"><p class="option__text">Support</p>
+            </div>
+            <div class="option__container">
+                <img class="option__img" src="images/icons/privacy.png"><p class="option__text">Privacy</p>
+            </div>
         </div>
     </aside>
 
-    <header id="header__container">
-        <div id="navbar__container">
-            <img id="searchbar__icon" src="images/icons/search.png">
-            <input id="searchbar__input">
-            
-            <img id="notification__icon" src="images/icons/bell.png">
-            <img id="navbar__pfp">
-            <p>John Doe</p>
-        </div>
-
-        <div id="status__container">
-            <img id="status__pfp">
-
-            <div id="name__container">
-                <p>Hi there, </p>
-                <p>John Doe (@alesbe)</p>
+    <main id="wrapper__right">
+        <header id="header__container">
+            <div id="navbar__container">
+                <img id="searchbar__icon" src="images/icons/search.png">
+                <input id="searchbar__input">
+                
+                <img id="notification__icon" src="images/icons/bell.png">
+                <img id="navbar__pfp">
+                <p>John Doe</p>
             </div>
-
-            <div id="actions__container">
-                <button id="new__button" class="action__btn">New</button>
-                <button id="upload__button" class="action__btn">Upload</button>
-                <button id="share__button" class="action__btn">Share</button>
+    
+            <div id="status__container">
+                <img id="status__pfp">
+    
+                <div id="name__container">
+                    <p>Hi there, </p>
+                    <p>John Doe (@alesbe)</p>
+                </div>
+    
+                <div id="actions__container">
+                    <button id="new__button" class="action__btn">New</button>
+                    <button id="upload__button" class="action__btn">Upload</button>
+                    <button id="share__button" class="action__btn">Share</button>
+                </div>
             </div>
-        </div>
-    </header>
-
-    <main id="main__container">
-
-        <section id="projects__wrapper">
-            <p class="section__title">Your Projects</p>
-
-            <div id="projects__container">
-                <div class="project__card">
-                    <div class="project__text">
-                        <p class="project__title">Super Cool Project</p>
-                        <p class="project__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        </header>
+    
+        <section id="main__container">
+    
+            <article id="projects__wrapper">
+                <p class="section__title">Your Projects</p>
+    
+                <div id="projects__container">
+                    <div class="project__card">
+                        <div class="project__text">
+                            <p class="project__title">Super Cool Project</p>
+                            <p class="project__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+    
+                        <div class="project__actions">
+                            <img class="action__favourite project__action" src="images/icons/favourite.png">
+                            <img class="action__view project__action" src="images/icons/view.png">
+                            <img class="action__fork project__action" src="images/icons/fork.png">
+                        </div>
+                    </div>
+                </div>
+            </article>
+    
+            <article id="announcements__wrapper">
+                <p class="section__title">Announcements</p>
+    
+                <div id="announcements__container">
+                    <div class="announcement__card">
+                        <p class="announcement__title">Site Maintenance</p>
+                        <p class="announcement__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                             ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-
-                    <div class="project__actions">
-                        <img class="action__favourite project__action" src="images/icons/favourite.png">
-                        <img class="action__view project__action" src="images/icons/view.png">
-                        <img class="action__fork project__action" src="images/icons/fork.png">
+    
+                    <hr>
+    
+                    <div class="announcement__card">
+                        <p class="announcement__title">Site Maintenance</p>
+                        <p class="announcement__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="announcements__wrapper">
-            <p class="section__title">Announcements</p>
-
-            <div id="announcements__container">
-                <div class="announcement__card">
-                    <p class="announcement__title">Site Maintenance</p>
-                    <p class="announcement__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-
-                <hr>
-
-                <div class="announcement__card">
-                    <p class="announcement__title">Site Maintenance</p>
-                    <p class="announcement__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
-
-        </section id="trending__wrapper">
-            <p id="trending__title">Trending</p>
-
-            <div class="trending__container">
-                <div class="trending__card">
-                    <img class="trending__pfp">
-
-                    <div class="trending__text">
-                        <p class="trending__title">@tegan</p>
-                        <p class="trending__desc">World Peace Builder</p>
+            </article>
+    
+            <article id="trending__wrapper">
+                <p id="trending__title">Trending</p>
+    
+                <div class="trending__container">
+                    <div class="trending__card">
+                        <img class="trending__pfp">
+    
+                        <div class="trending__text">
+                            <p class="trending__title">@tegan</p>
+                            <p class="trending__desc">World Peace Builder</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </article>
+        </main>
     </main>
 
     <script src="script.js"></script>
