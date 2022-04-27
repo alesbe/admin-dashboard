@@ -15,6 +15,8 @@
     --font-1: #FFFFFF;
     --font-2: #000000;
     --font-3: #6D6D6D;
+
+    --icon-size: 2rem;
 }
 
 body {
@@ -22,6 +24,28 @@ body {
     width: 100vw;
     display: flex;
 }
+
+/* Components */
+.icon {
+    height: var(--icon-size);
+}
+
+.profile-picture {
+    border-radius: 100%;
+    height: 4rem;
+    width: 4rem;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    height: 8rem;
+}
+
+/*
+============
+WRAPPER LEFT
+============
+*/
 
 /* Sidebar */
 #wrapper_left {
@@ -35,9 +59,16 @@ body {
     font-weight: 400;
     font-size: 1.1rem;
 }
+.sidebar__sect {
+    margin-top: 2rem;
+}
+
 #logo__container {
     font-size: 1.5rem;
     font-weight: 700;
+}
+#logo__container:hover {
+    transform: scale(1);
 }
 #logo__img {
     height: 3rem;
@@ -49,18 +80,114 @@ body {
     font-weight: 500;
     font-size: 1.2rem;
     margin: 1rem;
+    transition: transform 0.1s;
+}
+.option__container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .option__img {
-    height: 2rem;
     padding-right: 1rem;
 }
-.sidebar__sect {
-    margin-top: 2rem;
+
+/*
+=============
+WRAPPER RIGHT
+=============
+*/
+#wrapper__right {
+    width: 100%;
 }
 
-/* Header */
+/* = HEADER =*/
+/* Navbar */
 #header__container {
     background: var(--background-1);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#navbar__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+#navbar__container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#searchbar__input {
+    width: 50rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border: none;
+    background-color: var(--background-2);
+}
+
+#notification__icon {
+    height: 2rem;
+}
+#navbar__container:nth-child(1) {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#navbar__pfp {
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+#navbar__pfp > img{
+    position: absolute;
+    top: -2rem
+}
+
+/* Status bar */
+#status__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+#profile__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#name__user {
+    font-size: 2rem;
+}
+#status__pfp {
+   position: relative;
+   height: 6rem;
+   width: 6rem;
+   margin-right: 1rem;
+}
+#status__pfp > img{
+    position: absolute;
+    top: -3rem;
+    height: 12rem;
+}
+
+.action__btn {
+    background-color: var(--accent-1);
+    padding: 0.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 2rem;
+    color: var(--font-1);
+    font-size: 1rem;
 }
 
 /* Main */

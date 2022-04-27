@@ -11,39 +11,39 @@
 <body>
     <aside id="wrapper_left">
         <div id="logo__container" class="option__container">
-            <img id="logo__img" class="option__img" src="images/icons/logo.png"><p id="logo__text">Dashboard</p>
+            <img id="logo__img" class="option__img icon" src="images/icons/logo.png"><p id="logo__text">Dashboard</p>
         </div>
 
         <div class="sidebar__sect">
             <div class="option__container">
-                <img class="option__img" src="images/icons/home.png"><p class="option__text">Home</p>
+                <img class="option__img icon" src="images/icons/home.png"><p class="option__text">Home</p>
             </div>
             <div class="option__container">
-                <img class="option__img" src="images/icons/profile.png"><p class="option__text">Profile</p>
+                <img class="option__img icon" src="images/icons/profile.png"><p class="option__text">Profile</p>
             </div>
             <div class="option__container">
-                <img class="option__img" src="images/icons/message.png"><p class="option__text">Messages</p>
+                <img class="option__img icon" src="images/icons/message.png"><p class="option__text">Messages</p>
             </div>
             <div class="option__container">
-                <img class="option__img" src="images/icons/history.png"><p class="option__text">History</p>
+                <img class="option__img icon" src="images/icons/history.png"><p class="option__text">History</p>
             </div>
             <div class="option__container">
-                <img class="option__img" src="images/icons/tasks.png"><p class="option__text">Tasks</p>
+                <img class="option__img icon" src="images/icons/tasks.png"><p class="option__text">Tasks</p>
             </div>
             <div class="option__container">
-                <img class="option__img" src="images/icons/communities.png"><p class="option__text">Communities</p>
+                <img class="option__img icon" src="images/icons/communities.png"><p class="option__text">Communities</p>
             </div>
         </div>
 
         <div class="sidebar__sect">
             <div class="option__container">
-                <img class="option__img" src="images/icons/settings.png"><p class="option__text">Settings</p>
+                <img class="option__img icon" src="images/icons/settings.png"><p class="option__text">Settings</p>
             </div>
             <div class="option__container">
-                <img class="option__img" src="images/icons/support.png"><p class="option__text">Support</p>
+                <img class="option__img icon" src="images/icons/support.png"><p class="option__text">Support</p>
             </div>
             <div class="option__container">
-                <img class="option__img" src="images/icons/privacy.png"><p class="option__text">Privacy</p>
+                <img class="option__img icon" src="images/icons/privacy.png"><p class="option__text">Privacy</p>
             </div>
         </div>
     </aside>
@@ -51,20 +51,29 @@
     <main id="wrapper__right">
         <header id="header__container">
             <div id="navbar__container">
-                <img id="searchbar__icon" src="images/icons/search.png">
-                <input id="searchbar__input">
+                <div id="a">
+                    <img id="searchbar__icon" class="icon" src="images/icons/search.png">
+                    <input id="searchbar__input">
+                </div>
                 
-                <img id="notification__icon" src="images/icons/bell.png">
-                <img id="navbar__pfp">
-                <p>John Doe</p>
+                <div>
+                    <img id="notification__icon" src="images/icons/bell.png">
+                    <div id="navbar__pfp" class="profile-picture">
+                        <img src="images/profiles/cat-3.jpg">
+                    </div>
+                    <p>John Doe</p>
+                </div>
             </div>
     
             <div id="status__container">
-                <img id="status__pfp">
-    
-                <div id="name__container">
-                    <p>Hi there, </p>
-                    <p>John Doe (@alesbe)</p>
+                <div id="profile__container">
+                    <div id="status__pfp" class="profile-picture">
+                        <img src="images/profiles/cat-3.jpg">
+                    </div>
+                    <div id="name__container">
+                        <p>Hi there, </p>
+                        <p id="name__user">John Doe (@alesbe)</p>
+                    </div>
                 </div>
     
                 <div id="actions__container">
