@@ -21,7 +21,7 @@
 
 body {
     display: flex;
-    background-color: var(--accent-1);
+    height: 100vh;
 }
 
 /* Components */
@@ -209,9 +209,9 @@ WRAPPER RIGHT
 #main__container {
     display: flex;
     flex-direction: row;
-    height: 100%;
     background-color: var(--background-2);
     padding: 1rem;
+    height: 100%;
 }
 
 /* Projects */
