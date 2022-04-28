@@ -20,9 +20,8 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
     display: flex;
+    background-color: var(--accent-1);
 }
 
 /* Components */
@@ -39,6 +38,22 @@ body {
 
 .profile-picture img {
     height: 8rem;
+}
+
+.section__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card {
+    background-color: var(--background-1);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.section__wrapper {
+    margin: 1rem;
 }
 
 /*
@@ -192,11 +207,28 @@ WRAPPER RIGHT
 
 /* Main */
 #main__container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
     background-color: var(--background-2);
+    padding: 1rem;
 }
 
 /* Projects */
-
+#projects__wrapper {
+    width: 75%;
+}
+#projects__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project__card {
+    width: 40%;
+}
+/* Right panel */
+#right-panel__container {
+    width: 25%;
+}
 /* Announcements */
 
 /* Trending */
