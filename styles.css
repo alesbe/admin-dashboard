@@ -222,7 +222,15 @@ WRAPPER RIGHT
     color: var(--font-1);
     font-size: 1.2rem;
     font-weight: 500;
+
+    transition: all 0.1s;
 }
+.action__btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
 
 /* Main */
 #main__container {
@@ -309,6 +317,12 @@ WRAPPER RIGHT
     display: flex;
     align-items: center;
     margin: 1rem;
+
+    transition: all 0.1s;
+}
+.trending__card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .trending__text {
     margin-left: 1rem;
