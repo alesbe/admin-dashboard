@@ -46,6 +46,7 @@ a {
 }
 
 .profile-picture {
+    position: relative;
     border-radius: 100%;
     height: 4rem;
     width: 4rem;
@@ -54,6 +55,7 @@ a {
 }
 
 .profile-picture img {
+    position: absolute;
     height: 8rem;
 }
 
@@ -171,13 +173,11 @@ WRAPPER RIGHT
     font-size: 1.5rem;
 }
 #navbar__pfp {
-    position: relative;
     margin-left: 1rem;
     margin-right: 1rem;
     overflow: hidden;
 }
 #navbar__pfp > img{
-    position: absolute;
     top: -2rem
 }
 
@@ -201,13 +201,11 @@ WRAPPER RIGHT
     font-size: 2rem;
 }
 #status__pfp {
-   position: relative;
    height: 6rem;
    width: 6rem;
    margin-right: 1rem;
 }
 #status__pfp > img{
-    position: absolute;
     top: -3rem;
     height: 12rem;
 }
@@ -337,34 +335,22 @@ WRAPPER RIGHT
 }
 
 /* Profile pictures */
-#pfp-1 {
-    position: relative;;
-}
 #pfp-1 > img {
     position: absolute;
     top: -0.5rem;
     left: -0.5rem;
     height: 5rem;
 }
-#pfp-2 {
-    position: relative;
-}
 #pfp-2 > img {
     position: absolute;
     top: -1.5rem;
     left: -1.5rem;
-}
-#pfp-4 {
-    position: relative;;
 }
 #pfp-4 > img {
     position: absolute;
     top: -2rem;
     left: -2rem;
     height: 6rem;
-}
-#pfp-5 {
-    position: relative;;
 }
 #pfp-5 > img {
     position: absolute;
